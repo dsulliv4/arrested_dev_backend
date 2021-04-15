@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  answer_a: MyText
+  answer_b: MyText
+  answer_c: MyText
+  correct_answer: MyString
+  round_id: 1
+
+two:
+  content: MyText
+  answer_a: MyText
+  answer_b: MyText
+  answer_c: MyText
+  correct_answer: MyString
+  round_id: 1
