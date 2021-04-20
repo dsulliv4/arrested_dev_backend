@@ -1,2 +1,0 @@
-class UserRoundController < ApplicationController
-end
