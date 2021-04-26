@@ -7,30 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-april = User.create(name="April", email="aprilfools@gmail.com")
-jodi = User.create(name="Jodi", email="jodibear@gmail.com")
-lucy = User.create(name="Lucy", email="lucyrunsfast@gmail.com")
+
 
 round_1 = Round.create(:title => "Round 1")
 round_2 = Round.create(:title => "Round 2")
 round_3 = Round.create(:title => "Round 3")
 
-question_1 = Question.create(:round_id => 1, :question_number => 1, :content => "When is Harry’s birthday?", :answer_a => "July 31, 1980", :answer_b => "October 31, 1980", :answer_c => "July 31, 1981",  :correct_answer => "A")
+question_1 = Question.create(:round_id => 1, :question_number => 1, :content => "After Michael and George Michael torch the Banana Stand, why does George Sr. become angry with Michael?", :answer_a => "The insurance money on the Banana Stand was insufficient.", :answer_b => "The walls of the banana stand were lined with 250,000 in cash.", :answer_c => "He is disappointed his son is an arsonist",  :correct_answer => "B")
 
-question_2 = Question.create(:round_id => 1, :question_number => 2, :content => "Where is the boa constrictor from at the zoo?", :answer_a => "Argentina", :answer_b => "Columbia", :answer_c => "Brazil", :correct_answer => "C")
+question_2 = Question.create(:round_id => 1, :question_number => 2, :content => "•	In the pilot episode, Maeby suggests that she and George Michael do what in order to teach their parents that they need to see each other more:", :answer_a => "Take cartography lessons.", :answer_b => "Work extra shifts at the banana stand", :answer_c => "Kiss at the boat party", :correct_answer => "C")
 
-question_3 = Question.create(:round_id => 1, :question_number => 3, :content => "When did Voldemort kill Harry’s parents?", :answer_a => "July 31, 1980", :answer_b => "October 31, 1980", :answer_c => "July 31, 1981", :correct_answer => "D")
-
-
-question_4 = Question.create(:round_id => 2, :question_number => 4, :content => "How does Harry first learn about Nicolas Flamel?", :answer_a => "A Chocolate Frog card", :answer_b => "Hagrid", :answer_c => "A History of Magic", :correct_answer => "A")
-
-question_5 = Question.create(:round_id => 2, :question_number => 5, :content => "Who saves Harry from Voldemort in the Forbidden Forrest?", :answer_a => "Bane", :answer_b => "Hagrid", :answer_c => "Firenze",  :correct_answer => "C")
-
-question_6 = Question.create(:round_id => 2, :question_number => 6, :content => "How does Quirrell find out how to get past Fluffy?", :answer_a => "Hagrid lets it slip after dinner one night, over a glass of mead", :answer_b => "Hagrid tells him over drinks, in exchange for a dragon egg", :answer_c => "Hagrid accidentally mentions it in conversation, no alcohol is involved", :correct_answer => "D")
+question_3 = Question.create(:round_id => 1, :question_number => 3, :content => "George Sr. gives his retirement speech in the pilot and appoints the new CEO to be:", :answer_a => "Lucille", :answer_b => "G.O.B", :answer_c => "Michael", :correct_answer => "A")
 
 
-question_7 = Question.create(:round_id => 3, :question_number => 7, :content => "What is one bit of wisdom Dumbledore imparts to Harry during his 1st year at Hogwarts?", :answer_a => "Indifference and neglect often do much more damage than outright dislike.", :answer_b => "To the well-organized mind, death is but the next great adventure.", :answer_c => "Understanding is the first step to acceptance, and only with acceptance can there be recovery.",  :correct_answer => "B")
+question_4 = Question.create(:round_id => 2, :question_number => 4, :content => "•	Michael and George Michael eat “cornballs” for breakfast in an early season 1 episode, a Bluth family tradition since the mid-1970s when George Sr tried to market a device called the
+:", :answer_a => "Cornballer", :answer_b => "Corninator", :answer_c => "Cornicopia", :correct_answer => "A")
 
-question_8 = Question.create(:round_id => 3, :question_number => 8, :content => "When is Harry’s birthday?", :answer_a => "July 31, 1980", :answer_b => "October 31, 1980", :answer_c => "July 31, 1981",  :correct_answer => "A")
+question_5 = Question.create(:round_id => 2, :question_number => 5, :content => "Lucille Austero suffers from", :answer_a => "Vitiligo", :answer_b => "Extreme Vertigo", :answer_c => "Chlamydia",  :correct_answer => "B")
 
-question_9 = Question.create(:round_id => 3, :question_number => 9, :content => "Where is the boa constrictor from at the zoo?", :answer_a => "Argentina", :answer_b => "Columbia", :answer_c => "Brazil", :correct_answer => "C")    
+question_6 = Question.create(:round_id => 2, :question_number => 6, :content => "•	Which of the following is NOT true about Tobias Fünke?", :answer_a => "He longed to be a member of the Blue Man Group.", :answer_b => "He suffered from Never Nude Syndrome", :answer_c => "He founded the antisocial network/privacy software company Fakeblock", :correct_answer => "B")
+
+
+question_7 = Question.create(:round_id => 3, :question_number => 7, :content => "The name of the folk group formed by Tobias, Lindsay, and Maeby in the mid 1990s is", :answer_a => "The Blue Men 2.0", :answer_b => "The Never Nudes", :answer_c => "Dr. Fünke's 100% Natural Good-Time Family-Band Solution",  :correct_answer => "C")
+
+question_8 = Question.create(:round_id => 3, :question_number => 8, :content => "The actress that played G.O.B.’s accidental wife is", :answer_a => "Selena Gomez", :answer_b => "Amy Poehler", :answer_c => "Sandra Bullock",  :correct_answer => "B")
+
+question_9 = Question.create(:round_id => 3, :question_number => 9, :content => "The model home is located in which subdivision built and owned by the Bluth Company?", :answer_a => "Death Valley", :answer_b => "Sudden Valley", :answer_c => "Lucille Land", :correct_answer => "B")    
