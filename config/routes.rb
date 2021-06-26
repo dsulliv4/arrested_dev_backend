@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :user_answers, only: [:index, :create]
-      resources :questions, only: [:show]
+      resources :questions, only: [:index, :show]
       resources :users, only: [:index, :create]
       resources :rounds, only: [:show]
       resources :user_rounds, only: [:index, :show, :create, :update]
