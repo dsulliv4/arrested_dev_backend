@@ -1,6 +1,9 @@
 class UserAnswer < ApplicationRecord
-    belongs_to :user
-    belongs_to :round
     belongs_to :question
-    validates_presence_of :correct_answer, :user_input
+    validates_presence_of :user_input
+
+    def correct
+      user_input.downcase == question.correct_answer.downcase
+       
+    end
 end

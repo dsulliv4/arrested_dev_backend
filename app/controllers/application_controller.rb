@@ -1,3 +1,4 @@
-class ApplicationController < ActionController::API 
+class ApplicationController < ActionController::Base 
+  skip_forgery_protection
 
 end 
