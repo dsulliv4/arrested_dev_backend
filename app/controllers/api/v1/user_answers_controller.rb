@@ -1,12 +1,12 @@
 class Api::V1::UserAnswersController < ApplicationController
 
   def index
-    @user_answers = UserAnswer.all
+    @user_answers = UserAnswer.all.order(:question_id)
     render json: @user_answers.to_json(methods: :correct), status: 200
   end
 
   def create
-    @user_answer = UserAnswer.new(user_answer_params)
+    @user_answer = UserAnswer.find_or_create_by(user_answer_params)
     if @user_answer.save!
       render json: @user_answer.to_json, status: 201
     end
